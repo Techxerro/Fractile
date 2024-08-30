@@ -1,0 +1,126 @@
+.whychooseus-section{
+    padding:100px 0;
+    position: relative;
+    .container{
+        max-width: 85%!important;
+    }
+    .title{
+        width:330px;
+        margin-bottom: 50px;
+        h2{
+            font-size: 33px;
+            padding-left: 20px;
+        }
+    }    
+    .content-box{
+        h4{
+            font-family: 'Kanit';
+            font-size: 26px;
+            padding-left: 20px;            
+            margin:0;
+            position: relative;
+            &::after{
+                content: '';
+                background: #157438;
+                height:12px;
+                width:12px;
+                border-radius: 100px;
+                position: absolute;
+                left:0;
+                top:25%;
+                transform: translate(0,-75%);
+            }
+        }
+        p{
+            margin-top: 20px;
+            font-size: 21px;
+            opacity: 0.6!important;
+            line-height: normal;
+        }
+    }
+    #whyusvector2{
+        position: absolute;     
+        left:0;
+        bottom:-5%;
+    }
+    #whyusvector1{
+        position: absolute;
+        width:32.5%;
+        top:0;
+        right:0;
+
+    }
+}
+
+// xl screen
+
+@media (min-width: 1550px){
+    .whychooseus-section {
+        .container {
+            max-width: 1320px !important;
+        }
+        #whyusvector1{
+            position: absolute;
+            width:18%;
+            top:0;
+            right:0;
+        }
+    }
+}
+
+
+//*Large Screen *//
+@media (min-width:1024px) and (max-width:1380px) {
+    
+}
+
+@media (min-width:320px) and (max-width:480px) {
+    .whychooseus-section{
+        padding:50px 0;
+        position: relative;
+        .container{
+            max-width: 90%!important;
+        }
+        .title{
+            width:100%;
+            margin-bottom: 50px;
+        }    
+        .content-box{
+            h4{
+                font-family: 'Kanit';
+                font-size: 28px;
+                padding-left: 20px;            
+                margin:0;
+                position: relative;
+                &::after{
+                    content: '';
+                    background: #157438;
+                    height:12px;
+                    width:12px;
+                    border-radius: 100px;
+                    position: absolute;
+                    left:0;
+                    top:25%;
+                    transform: translate(0,-75%);
+                }
+            }
+            p{
+                margin-top: 20px;
+                font-size: 19px;
+                opacity: 0.6!important;
+            }
+        }
+        #whyusvector2{
+            position: absolute;        
+            width:10%;
+            left:0;
+            bottom:-10%;
+        }
+        #whyusvector1{
+            position: absolute;
+            width:32.5%;
+            top:0;
+            right:0;
+        }
+    }
+}

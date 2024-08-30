@@ -1,0 +1,84 @@
+.videos-section{
+    padding:100px 0;
+    .video-wrapper{
+        width:100%;
+        min-height:350px;
+    }
+}
+
+.pagination{
+    gap:10px!important;
+    padding-bottom: 30px;
+    li{
+        box-shadow: 0 0 10px #00000010;
+        border:1px solid #efefef;
+        padding: 5px 9px;
+        font-size: 18px;
+        a{
+            color:#727272!important;
+        }
+    }
+    .active{
+        background: #8ed61d;
+        a{
+            color: #fff!important;
+        }
+    }
+}
+
+.banner-Visualisation{
+    position: relative;
+    height:60vh;
+    display:flex;
+    align-items: center;
+    .breadcrumb{
+        display: flex;
+        gap:5px;
+        align-items: center;
+    }
+    h2{
+        font-size: 60px;
+        width:50%;
+    }
+    #aboutimg{
+        position: absolute;
+        bottom:0;
+        right:0;
+    }
+    #companyimg2{
+        position: absolute;
+        width:100%;
+        height:100%;
+        background-color: #75AD8A;
+        opacity: .4;
+        transform: skew(-30deg);
+        left:-55%;
+        bottom:0;
+        z-index: -1;
+    }
+}
+
+.company-bg1{
+    height:700px;
+    background: url('../../../Assets/services/3d-house-renders-nz.jpg')!important;
+    background-size: cover!important;
+    background-position: bottom!important;
+}
+
+// xl screen //
+@media (min-width:1550px) {
+    .banner-Visualisation {
+        height:500px;
+        #aboutimg {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 55%;
+        }
+    }
+    .company-bg{
+        height:700px!important;
+        background-position: bottom!important;
+    }
+    
+}

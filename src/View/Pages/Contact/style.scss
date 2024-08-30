@@ -1,0 +1,91 @@
+.form{
+    padding:100px 0;
+    h2{
+        font-weight: 500!important;
+        padding-bottom: 20px;
+    }
+    form{
+        padding-bottom: 20px;
+        label{
+            width:100%;
+            input{
+                width:100%;
+                padding:15px;
+                font-size: 1.2rem;
+                border: 1px solid #00000032;
+            }
+            padding:10px 0;
+        }
+        textarea{
+            width:100%;
+            padding:15px;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            border: 1px solid #00000032;
+        }
+        input[type="submit"]{
+            padding:15px 20px;
+            border:none;
+            background-color: #81d61d;
+        }
+    }
+
+    .schedule-box{
+        width:100%;
+        padding:15px;
+        background: #000;
+        color:#fff;
+        margin: 10px 0 20px;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        span{
+            font-size: 1.1rem;
+        }
+        
+        a{
+            color:#fff;
+            text-decoration: none;
+        }
+        &:hover{
+        svg{
+            position: relative;
+            left: 15px;
+        }}
+    }
+    .contact-box{
+        width:100%;
+        padding:25px 15px;
+        background: #000;
+        color:#fff;
+        margin: 10px 0 20px;
+        border-radius: 10px;
+        display: flex;
+        gap:20px;
+        align-items: center;
+        justify-content: center;
+        span{
+            font-size: 1.1rem;
+        }
+        a{
+            color:#fff;
+            text-decoration: none;
+        }
+        
+        &:hover{
+            transition: all 200ms ease-in-out;
+            svg{
+                position: relative;
+                left: 10px;
+                
+            }}
+    }
+    .greenbg{
+        background-color: #81d61d!important;
+        &:hover{
+            background-color: #000000!important;
+            transition: all 200ms ease-in-out;
+        }
+    }
+}

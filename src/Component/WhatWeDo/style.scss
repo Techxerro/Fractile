@@ -1,0 +1,182 @@
+.whatwedo{
+    padding:110px 0;
+    background: #157438;
+    color:#fff;
+    overflow: hidden;
+    h2{
+        font-size: 50px;
+        font-weight: bold;
+        span{
+            color:#FFE77B
+        }
+    }
+    position: relative;
+    #construction{
+        float: right;
+        width:85%;
+    }
+    #whitevector{
+        position: absolute;
+        left:0;
+        bottom:0;
+    }
+    #transparentvector{
+        position: absolute;
+        right:0;
+        top:0;
+    }
+    #strokevector{
+        position: absolute;        
+        right:35%;
+        top:0%;
+        z-index: 0;
+    }
+    #strokevector2{
+        position: absolute;
+        left:-25%;
+        bottom: 0%;
+        z-index: 0;
+        scale: 1.5;
+    }
+    #transparentvector2{
+        position: absolute;
+        top:-5%;
+        right:10%;
+        z-index: 0;
+        animation: rotateanimation 100000ms linear infinite;
+    }
+    #transparentvector3{
+        position: absolute;
+        bottom:0;
+        right:-10%;
+        z-index: 0;
+        transform: rotate(180deg);
+        scale:0.8;
+        animation: rotateanimation 300000ms linear infinite reverse;
+    }
+    @keyframes rotateanimation{
+        0%{
+            transform: rotate(180deg);
+        }
+        100%{
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+
+// xl screen //
+
+@media (min-width: 1550px){
+.whatwedo{
+    #transparentvector3{
+        bottom:-10%;
+        right:0;
+    }
+    #transparentvector2{
+        right:15%;
+    }
+}
+}
+
+//*Large Screen *//
+@media (min-width:1024px) and (max-width:1380px) {
+    .whatwedo{
+        h2{
+            font-size: 40px;
+        }
+        #transparentvector3{
+            scale:0.6;
+        }
+        #transparentvector2{
+            scale:0.6;
+        }
+    }
+}
+//*Large Screen *//
+@media (max-width:1024px) {
+    .whatwedo{
+        h2{
+            font-size: 40px;
+        }
+        #construction{
+            width:100%;
+            padding-top:30px;
+        }
+        #strokevector {
+            right: 70%;
+            top: -12%;
+        }
+    }
+}
+/*Small screen*/
+@media (min-width:320px) and (max-width:480px){
+    .whatwedo{
+        padding:50px 0;
+        background: #157438;
+        color:#fff;        
+        position: relative;
+        overflow: hidden;
+        h2{
+            position: relative;
+            z-index: 1;
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+        #construction{
+            width:100%;
+        }
+        #whitevector{
+            position: absolute;
+            left:0;
+            bottom:0;
+            z-index: 0;
+        }
+        #transparentvector{
+            position: absolute;
+            right:0;
+            top:0;
+            z-index: 0;
+        }
+        #strokevector{
+            position: absolute;            
+            right:40%;
+            top:0%;
+            z-index: 0;
+            display: none;
+        }
+        #strokevector2{
+            position: absolute;
+            left:-30%;
+            // width:100dvh;
+            bottom:0%;
+            z-index: 0;
+            width:100%;
+        }
+        #transparentvector2{
+            position: absolute;
+            top: -10%;
+            right: 50%;
+            z-index: 0;
+            width: 150px;
+        }
+        #transparentvector3{
+            position: absolute;
+            bottom: -25%;
+            right: -25%;
+            z-index: 0;
+            transform: rotate(180deg);
+            scale: 0.8;
+            width: 90%;
+            // animation: rotateanimation 800000ms linear infinite reverse;
+        }
+        @keyframes rotateanimation{
+            0%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(-180deg);
+            }
+        }
+    }   
+}
