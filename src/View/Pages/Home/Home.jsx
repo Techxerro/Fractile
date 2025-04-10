@@ -6,16 +6,21 @@ import Whatwedo from "../../../Component/WhatWeDo/WhatWeDo";
 import OurApproach from "../../../Component/OurApproach/OurApproach";
 import NewsandInsight from "../../../Component/Team";
 import WhyChooseus from "../../../Component/WhyChooseus/WhyChooseus";
+import DropdownWhatwedo from "../../Layout/Header/DropdownWhatwedo";
+import Dropdowncompany from "../../Layout/Header/Dropdowncompany";
 
-const Home = () =>{
-    return(
+const Home = () => {
+    return (
         <>
-        <HeroSection/>
-        <AboutSection/>
-        <Whatwedo/>
-        <OurApproach/>
-        <NewsandInsight/>
-        <WhyChooseus/>
+
+            <HeroSection />
+            {/* <Dropdowncompany/> */}
+            {/* <DropdownWhatwedo/> */}
+            <AboutSection />
+            <Whatwedo />
+            <OurApproach />
+            <NewsandInsight />
+            <WhyChooseus />
         </>
     )
 }
